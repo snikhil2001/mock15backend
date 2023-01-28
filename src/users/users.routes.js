@@ -52,7 +52,7 @@ app.get("/profile", authMiddleware, async (req, res) => {
 });
 
 app.get("/logout", (req, res) => {
-  return res.send({ message: "logout successful", token: null });
+  return res.send({ message: "logout successful", token: undefined });
 });
 
 module.exports = app;
